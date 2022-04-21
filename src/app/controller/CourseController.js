@@ -1,12 +1,12 @@
 const Course = require('../models/course');
 const { mongooseToObject } = require('../../util/mongoose');
 
-class SiteController{
+class CourseController {
 
-    home(req, res) {
-        res.render('news');
-      };
-      
+  course(req, res) {
+    res.render('course');
+  }
+  
 }
 
-module.exports = new SiteController();
+module.exports = new CourseController();
